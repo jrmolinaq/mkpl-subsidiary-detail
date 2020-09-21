@@ -1,0 +1,12 @@
+<div class="column2 no-float">
+    <div class="info-container" *ngIf="generalFields">
+        <card-description cardTitle="Datos Generales" [dataFields]="generalFields" [data]="generalData"></card-description>
+        <card-description cardTitle="Datos de Contacto" [dataFields]="contactFields" [data]="contactData"></card-description>
+    </div>
+    <!-- TODO se cambió por routerLink
+    <button class="button-primary self-end m-top-9" *ngIf="canEdit" [routerLink]="['edit']">Editar</button>
+    -->
+    <a class="button-primary self-end m-top-9 link-simple" href="/subsidiary/edit?id={{subsidiaryId}}">
+        Editar
+    </a>
+</div>

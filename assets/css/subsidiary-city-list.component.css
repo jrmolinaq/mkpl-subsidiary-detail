@@ -1,0 +1,56 @@
+@charset "UTF-8";
+.container-sub-city-list {
+  padding-right: 101px;
+}
+
+.region-row {
+  height: 61px;
+}
+
+.border-row {
+  border-top: 1px solid #F5F6FB;
+}
+
+.border-row-bottom {
+  border-bottom: 1px solid #F5F6FB;
+}
+
+.days-label {
+  background-color: #EEF2F3;
+  border-radius: 10px;
+  width: 43px;
+}
+
+.icon-row {
+  height: 29px;
+  width: 29px;
+}
+.icon-row:hover {
+  background-color: #EEF2F3;
+  cursor: pointer;
+}
+
+.icon-minus {
+  position: relative;
+}
+.icon-minus::before {
+  bottom: 5px;
+  content: "−";
+  font-size: 30px;
+  position: absolute;
+}
+
+.cities-container {
+  margin-left: 100px;
+}
+
+.cities-container {
+  margin-left: 100px;
+  max-height: 1000px;
+  overflow: hidden;
+  transition: max-height cubic-bezier(0.79, 0.01, 0.38, 0.99) 290ms;
+}
+
+.cities-collapsed {
+  max-height: 0;
+}

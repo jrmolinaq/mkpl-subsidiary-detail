@@ -1,0 +1,24 @@
+<main class="container-sub-city-list info-card">
+  <div class="row2 space-between m-bottom-6">
+    <h1 class="card-title">Tiempos de entrega</h1>
+    <h1 class="card-title">Días</h1>
+  </div>
+  <div class="region" *ngFor="let region of regions; let i = index">
+    <div class="row2 middle region-row">
+      <i class="icon text-big deep-sea-green icon-row row2 middle center" (click)="toggleRegionContainer(i)"
+        [ngClass]="{'icon-cross': region.collapsed, 'icon-minus': !region.collapsed}"></i>
+      <div class="row2 middle space-between width-100 height-100 m-left-4"
+        [ngClass]="{ 'border-row': ifPreviousNotCollapsed(i), 'border-row-bottom': ifNotLastOrLastNotCollapsed(i)}">
+        <h3 class="field-text deep-sea-green bold">{{region.name}}</h3>
+        <span class="days-label field-text deep-sea-green text-center bold">{{region.days}}</span>
+      </div>
+    </div>
+    <div class="cities-container" [ngClass]="{'cities-collapsed': region.collapsed}">
+      <div class="row2 middle space-between region-row border-row" *ngFor="let city of region.cities; let j = index"
+        [ngClass]="{'border-row': j}">
+        <p class="field-text deep-sea-green">{{city.name | titlecase}}</p>
+        <span class="days-label field-text deep-sea-green text-center bold">{{city.days}}</span>
+      </div>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,20 @@
+<div class="column2 column-div m-bottom-9">
+  <h2 class="inventory-subtitle m-bottom-5 poppins bold">Catálogo de inventario</h2>
+  <p class="deep-sea-green text-big">Última actualización 
+    <span class="deep-sea-green text-big bold">{{inventoryDate | date: 'dd/MM/yyyy'}}</span>
+  </p>
+</div>
+<div class="table-container" *ngIf="products && canReadInventory">
+  <search (item)="searchItem($event)"></search>
+  <table-list [modifiers]="modifiers" [data]="products" [configTable]="configTable"></table-list>
+</div>
+<div class="row2 space-between m-top-9">
+
+  <!-- TODO paginador
+  <paginator [paginator]="dataToPaginate" (page)="currentPageChange($event)"></paginator>
+ -->
+ 
+  <button *ngIf="canUpdateInventory" (click)="openModal('cv-modal')" class="button-primary" type="button">
+    Actualizar inventario
+  </button>
+</div>

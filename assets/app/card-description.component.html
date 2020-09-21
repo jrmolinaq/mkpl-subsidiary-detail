@@ -1,0 +1,6 @@
+<div  *ngIf="data && dataFields" class="info-card m-right-4 width-100 height-100">
+  <span class="card-title">{{cardTitle}}</span>
+  <card-field *ngFor="let key of objectKeys(dataFields); let i = index" [field]="dataFields[key]"
+    [text]="data[key]" [border]="!isLastItem(i, data)">
+  </card-field>
+</div>

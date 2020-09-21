@@ -1,0 +1,41 @@
+.product-info, .table-header {
+  min-height: 50px;
+}
+
+.table-header {
+  width: 100%;
+}
+
+.header-title {
+  align-self: center;
+  padding: 0 10px 0 14px;
+}
+
+.product-info {
+  align-items: center;
+}
+
+.table-item {
+  padding: 0 10px 0 14px;
+}
+
+.table-header, .product-info {
+  min-height: 50px;
+}
+
+.table-header {
+  width: 100%;
+}
+
+.header-title {
+  align-self: center;
+  padding: 0 10px 0 14px;
+}
+
+.product-info {
+  align-items: center;
+}
+
+.table-item {
+  padding: 0 10px 0 14px;
+}

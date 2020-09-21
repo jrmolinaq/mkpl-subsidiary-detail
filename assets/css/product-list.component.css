@@ -1,0 +1,16 @@
+.main-table {
+  background-color: #F8F8F8;
+}
+
+.table-container {
+  background-color: #FFF;
+  border: 2px solid #F5F6FB;
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
+}
+
+.inventory-subtitle {
+  color: #093545;
+  font-size: 24px;
+}

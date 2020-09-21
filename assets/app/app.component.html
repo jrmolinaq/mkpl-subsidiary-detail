@@ -1,0 +1,47 @@
+<div class="screen-container-sub-detail column2">
+	<div class="column2 start">
+	  <!-- TODO se cambia botón <button class="bold m-bottom-7 row middle" (click)="goToBack()">
+		<span class="icon icon-long-left-arrow back-arrow deep-sea-green"></span>
+		<span class="poppins text-big deep-sea-green bold m-left-2">Volver</span>
+	  </button> -->
+	  <a class="text-big poppins bold deep-sea-green m-bottom-6 row2 middle link-simple" href="/subsidiary">
+		<i class="icon icon-long-left-arrow deep-sea-green title-medium m-right-1"></i>
+		Volver
+	  </a>
+	  <h3 class="title-small bold deep-sea-green m-bottom-9">
+		Detalle de la sucursal
+	  </h3>
+	</div>
+	<profile-info roleProfile="subsidiaryadmin"></profile-info>
+	<subsidiary-city-list class="m-top-4"></subsidiary-city-list>
+	<div class="m-top-9" *ngIf="$paginator | async as paginator">
+	  <product-list [subsidiaryId]="subsidiaryId" [paginator]="paginator"></product-list>
+	</div>
+	<div class="info-card order-container m-top-9">
+	  <div class="order-icon">
+		<img src="/o/mkpl-subsidiary-detail/icons/order.svg" alt="see orders" />
+	  </div>
+	  <div class="order-description">
+		<h4 class="text-big bold deep-sea-green">Pedidos</h4>
+		<h6 class="order-description-general text-normal hoki">
+		  Total generales    <span class="quantity text-big poppins bold deep-sea-green m-left-3">{{ totalOrders || '-'}}</span>
+		</h6>
+	  </div>
+	  <div class="order-question">
+		<h4 class="text-big bold field-text hoki">
+		  ¿Quiéres ver todos los pedidos de la sucursal?
+		</h4>
+		<span class="text-normal deep-sea-green">
+		  Ingresa e informate de los pedidos actules de la sucursal
+		</span>
+	  </div>
+	  <div class="order-button">
+		<!-- TODO se cambia por routerlink <a class="button-secondary button-width" [routerLink]="['orders']">
+		  ver los pedidos
+		</a> -->
+		<a class="button-secondary button-width deep-sea-green link-simple" href="/subsidiary/orders?id={{subsidiaryId}}">
+			Ver los pedidos
+		</a>
+	  </div>
+	</div>
+</div>
