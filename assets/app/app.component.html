@@ -13,7 +13,7 @@
 	  </h3>
 	</div>
 	<profile-info roleProfile="subsidiaryadmin"></profile-info>
-	<subsidiary-city-list class="m-top-4"></subsidiary-city-list>
+	<!-- TODO Se oculta porque va a cambiar  <subsidiary-city-list class="m-top-4"></subsidiary-city-list> -->
 	<div class="m-top-9" *ngIf="$paginator | async as paginator">
 	  <product-list [subsidiaryId]="subsidiaryId" [paginator]="paginator"></product-list>
 	</div>

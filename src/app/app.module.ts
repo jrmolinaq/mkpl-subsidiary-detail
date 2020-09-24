@@ -10,10 +10,11 @@ import { ProfileInfoComponent } from './profile-info.component';
 import { ProductListComponent } from './product-list.component';
 import { TableListComponent } from './table-list.component';
 import { SearchComponent } from './search.component';
+import { SubsidiaryCityListComponent } from './subsidiary-city-list.component';
+import { PaginatorComponent } from './paginator.component';
 
 import { ShortLargeStringsPipe } from './pipes/short-large-strings.pipe';
 import { CurrencyPipe } from '@angular/common';
-import { SubsidiaryCityListComponent } from './subsidiary-city-list.component';
 
 @NgModule({
 	imports: [
@@ -26,6 +27,7 @@ import { SubsidiaryCityListComponent } from './subsidiary-city-list.component';
 		AppComponent,
 		CardDescriptionComponent,
 		CardFieldComponent,
+		PaginatorComponent,
 		ProductListComponent,
 		ProfileInfoComponent,
 		SearchComponent,

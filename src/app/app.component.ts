@@ -39,10 +39,10 @@ export class AppComponent implements OnInit {
   
 		this.subsidiaryService.getSubsidiary(this.subsidiaryId)
 			.subscribe( data =>
-				this.totalOrders = data.total_orders
+				this.totalOrders = data.totalOrders
 		);
   
-	  this.$paginator = this.productService.getProductList3(this.subsidiaryId);
+	  this.$paginator = this.productService.getProductList(this.subsidiaryId);
 	}
 
 	// this.getURLParameter("id")

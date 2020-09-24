@@ -10,9 +10,7 @@
 </div>
 <div class="row2 space-between m-top-9">
 
-  <!-- TODO paginador
   <paginator [paginator]="dataToPaginate" (page)="currentPageChange($event)"></paginator>
- -->
  
   <button *ngIf="canUpdateInventory" (click)="openModal('cv-modal')" class="button-primary" type="button">
     Actualizar inventario

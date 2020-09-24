@@ -30,7 +30,7 @@ export interface SubsidiaryDetail {
   time_regions_delivery: TimeDelivery[];
   time_cities_delivery: TimeDelivery[];
   admin_user: SubsidiaryAdminUser;
-  total_orders: number;
+  totalOrders: number;
 }
 
 export interface SubsidiaryAdminUser {

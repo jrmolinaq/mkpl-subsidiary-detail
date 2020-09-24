@@ -17,6 +17,7 @@
 @import './table-list.component.css';
 @import './search.component.css';
 @import './subsidiary-city-list.component.css';
+@import './paginator.component.css';
 
 html,
 body {
