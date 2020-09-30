@@ -23,7 +23,7 @@ export class SubsidiaryService {
   }
 
   getSubsidiary(id: string): Observable<SubsidiaryDetail> {
-    return this.http.get<SubsidiaryDetail>(`http://localhost:8080/o/ProviderCompraDigitalPortlet/api/subsidiary/found/${id}`);
+    return this.http.get<SubsidiaryDetail>(`/o/ProviderCompraDigitalPortlet/api/subsidiary/found/${id}`);
   }
 
   updateSubsidiary(subsidiary: any, cityId: string, providerId: string) {

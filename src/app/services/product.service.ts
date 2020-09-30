@@ -34,7 +34,7 @@ export class ProductService {
 
     return this.http
       .get<ListResponse>(
-        `http://localhost:8080/o/ProviderCompraDigitalPortlet/api/product/subsidiary/${subsidiaryId}`,
+        `/o/ProviderCompraDigitalPortlet/api/product/subsidiary/${subsidiaryId}`,
         {
           params
         }
